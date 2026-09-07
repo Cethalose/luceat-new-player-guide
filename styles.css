@@ -185,6 +185,14 @@ h3 {
   font-size: 0.94rem;
 }
 
+.support-legend {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .path-guidance {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -210,6 +218,34 @@ h3 {
 
 .path-guidance li + li {
   margin-top: 9px;
+}
+
+.status {
+  display: inline-block;
+  margin: 0 8px 4px 0;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.78rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.status-implemented {
+  background: #dceee7;
+  color: #145543;
+  border: 1px solid #99c7b6;
+}
+
+.status-partial {
+  background: #fff2c6;
+  color: #604a00;
+  border: 1px solid #dac26b;
+}
+
+.status-catalog {
+  background: #e8edf2;
+  color: #3f4d5a;
+  border: 1px solid #c3ccd4;
 }
 
 table {

@@ -156,7 +156,7 @@
 
       <section id="paths">
         <h2>Class Paths And Subclasses</h2>
-        <p class="section-intro">Paths are the strongest identity choices after class. They become available at the level listed below. Cleric, Sorcerer, and Warlock choose their first path at creation because their path feature is level 1. Each entry below explains what the supported path currently gives your character in Luceat.</p>
+        <p class="section-intro">Paths are the strongest identity choices after class. They become available at the level listed below. Cleric, Sorcerer, and Warlock choose their first path at creation because their path feature is level 1. Each entry below distinguishes what Luceat currently enforces from choices that are presently selectable and displayed only.</p>
         <table>
           <thead><tr><th>Class</th><th>When</th><th>Choice Group</th><th>Supported Options</th></tr></thead>
           <tbody>
@@ -177,141 +177,146 @@
         </table>
         <p class="small">Names listed here are the supported Luceat choices. Do not assume an unlisted tabletop subclass is available in Luceat.</p>
 
-        <h3>What Each Path Gives You</h3>
+        <h3>Current Support State</h3>
+        <div class="support-legend" aria-label="Subclass support state legend">
+          <span><strong>Mechanically implemented</strong> means ordinary downstream gameplay consumes the subclass mechanic.</span>
+          <span><strong>Partially implemented</strong> means Luceat has an executable primitive, but ordinary gameplay integration is incomplete or bounded.</span>
+          <span><strong>Selection/catalog only</strong> means the choice can be selected, saved, and displayed, but subclass-specific gameplay mechanics do not currently run.</span>
+        </div>
         <div class="path-guidance">
           <article>
             <h4>Artificer</h4>
             <ul>
-              <li><strong>Field Alchemist:</strong> support-focused specialist built around experimental elixirs. Choose it if you want utility and prepared solutions rather than direct weapon pressure.</li>
-              <li><strong>Warding Smith:</strong> defensive craft specialist with ward and armor support. Choose it if you want an Artificer who protects the party and improves survivability.</li>
-              <li><strong>Clockwork Sapper:</strong> tool and construct specialist with bounded helper support. Choose it if you want devices, practical utility, and a more technical playstyle.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Field Alchemist:</strong> selectable and saved at level 3; no experimental elixir gameplay mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Warding Smith:</strong> selectable and saved at level 3; no crafted ward or armor-support mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Clockwork Sapper:</strong> selectable and saved at level 3; no construct-helper or tool-utility mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Barbarian</h4>
             <ul>
-              <li><strong>Path of the Berserker:</strong> direct rage offense. It unlocks Frenzy, letting the barbarian push rage into a more aggressive assault pattern.</li>
-              <li><strong>Iron Fury Path:</strong> reliable rage damage. Luceat records a bonus-action rage rider that spends 1 Rage and adds a deterministic +2 weapon-damage rider.</li>
-              <li><strong>Storm Breaker Path:</strong> counterpressure and toughness. Its current supported features emphasize retaliation triggers and damage reduction.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Path of the Berserker:</strong> selectable and saved at level 3; no Frenzy gameplay mechanic currently runs.</li>
+              <li><span class="status status-partial">Partially implemented</span><strong>Iron Fury Path:</strong> selectable and saved at level 3. Luceat has an executable bonus-action `iron-fury-rage` primitive that spends 1 Rage and records a +2 weapon-damage rider, but no ordinary gameplay caller currently exposes it end-to-end.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Storm Breaker Path:</strong> selectable and saved at level 3; no retaliation-trigger or damage-reduction mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Bard</h4>
             <ul>
-              <li><strong>College of Lore:</strong> broad knowledge and control. It grants extra skill breadth and Cutting Words-style interference with enemy rolls.</li>
-              <li><strong>College of Masks:</strong> social infiltration. Its supported features emphasize disguise utility and flexible skill coverage.</li>
-              <li><strong>College of Echoes:</strong> performance magic and support. Its features add inspiration riders and sound-themed spell support.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>College of Lore:</strong> selectable and saved at level 3; no bonus-proficiency or Cutting Words gameplay mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>College of Masks:</strong> selectable and saved at level 3; no disguise or skill-flexibility mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>College of Echoes:</strong> selectable and saved at level 3; no inspiration-rider or sound-spell mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Cleric</h4>
             <ul>
-              <li><strong>Life Domain:</strong> healing specialist. Disciple of Life improves the vitality restored by healing magic.</li>
-              <li><strong>Dawn Vigil Domain:</strong> protective support. Its Channel Divinity action spends 1 Channel Divinity to grant 6 temporary hit points as an ally-support action.</li>
-              <li><strong>Ember Mercy Domain:</strong> restorative firekeeper. Its supported features combine healing boosts with fire-resistance support.</li>
-              <li><strong>Stone Vow Domain:</strong> defensive anchor. Its supported features emphasize protective aura play and damage resistance.</li>
-              <li><strong>Threshold Lantern Domain:</strong> sanctuary and vigilance. Its supported features emphasize sanctuary utility and undead-detection support.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Life Domain:</strong> selectable and saved at level 1; no Disciple of Life healing mechanic currently runs.</li>
+              <li><span class="status status-partial">Partially implemented</span><strong>Dawn Vigil Domain:</strong> selectable and saved at level 1. Luceat has an executable `dawn-vigil-channel` primitive that spends 1 Channel Divinity and applies 6 temporary hit points, but no ordinary gameplay caller currently exposes it end-to-end.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Ember Mercy Domain:</strong> selectable and saved at level 1; no healing-boost or fire-resistance mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Stone Vow Domain:</strong> selectable and saved at level 1; no protective-aura or damage-resistance mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Threshold Lantern Domain:</strong> selectable and saved at level 1; no sanctuary or undead-detection mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Druid</h4>
             <ul>
-              <li><strong>Circle of the Land:</strong> spell endurance. Natural Recovery lets the druid recover some expended magic during a short rest.</li>
-              <li><strong>Circle of the Thorn:</strong> controlling wilderness magic. Its supported features add alternate-form riders and terrain control.</li>
-              <li><strong>Circle of the River:</strong> movement and recovery. Its supported features emphasize healing flow and movement utility.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Circle of the Land:</strong> selectable and saved at level 2; no Natural Recovery mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Circle of the Thorn:</strong> selectable and saved at level 2; no alternate-form rider or terrain-control mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Circle of the River:</strong> selectable and saved at level 2; no healing-flow or movement-utility mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Fighter</h4>
             <ul>
-              <li><strong>Champion:</strong> simplest offensive path. Improved Critical broadens critical hits to attack rolls of 19 or higher.</li>
-              <li><strong>Tactical Dice Captain:</strong> resource-driven tactics. It adds Tactical Dice and a bonus-action Commanding Strike Die that spends 1 tactical die for a 1d8 weapon-damage rider.</li>
-              <li><strong>Shield Line Veteran:</strong> party defender. Its supported features emphasize ally-protection reactions and guard stance.</li>
-              <li><strong>Arcane Weapon Adept:</strong> martial magic hybrid. Its supported features channel spell effects through weapons with bounded spell riders.</li>
-              <li><strong>Siege Breaker:</strong> forceful breaker. Its supported features emphasize object damage bonuses and push riders.</li>
+              <li><span class="status status-implemented">Mechanically implemented</span><strong>Champion:</strong> selectable and saved at level 3. Improved Critical is enforced by combat resolution: attack rolls of 19 or 20 are critical hits.</li>
+              <li><span class="status status-partial">Partially implemented</span><strong>Tactical Dice Captain:</strong> selectable and saved at level 3. Luceat has an executable `commanding-strike-die` primitive that spends 1 Tactical Dice Pool and records a 1d8 weapon-damage rider, but no ordinary gameplay caller currently exposes it end-to-end.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Shield Line Veteran:</strong> selectable and saved at level 3; no ally-protection reaction or guard-stance mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Arcane Weapon Adept:</strong> selectable and saved at level 3; no weapon spell-channel or bounded spell-rider mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Siege Breaker:</strong> selectable and saved at level 3; no object-damage bonus or push-rider mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Monk</h4>
             <ul>
-              <li><strong>Way of the Open Hand:</strong> control through disciplined strikes. Open Hand Technique adds effects when using flurry techniques.</li>
-              <li><strong>Way of Flowing Steps:</strong> mobility specialist. Its bonus-action technique spends 1 Ki for mobility and bounded bonus-action options.</li>
-              <li><strong>Way of the Still Flame:</strong> mobile damage. Its supported features combine ki damage riders with mobility techniques.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Way of the Open Hand:</strong> selectable and saved at level 3; no Open Hand Technique gameplay mechanic currently runs.</li>
+              <li><span class="status status-partial">Partially implemented</span><strong>Way of Flowing Steps:</strong> selectable and saved at level 3. Luceat has an executable `flowing-step-technique` primitive that spends 1 Ki and records mobility grant tags, but no ordinary gameplay caller currently exposes it end-to-end.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Way of the Still Flame:</strong> selectable and saved at level 3; no ki damage-rider or mobility mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Paladin</h4>
             <ul>
-              <li><strong>Oath of Devotion:</strong> classic sacred protector. It supports Sacred Weapon and Turn the Unholy for focused weapon empowerment and anti-fiend or anti-undead presence.</li>
-              <li><strong>Oath of the Bright Guard:</strong> radiant striker. Bright Guard Smite spends 5 Lay on Hands resource for a 1d8 radiant smite-style rider.</li>
-              <li><strong>Oath of the Open Road:</strong> mobile guardian. Its supported features emphasize travel aura and movement support.</li>
-              <li><strong>Oath of Iron Mercy:</strong> damage mitigation. Its supported features emphasize ally damage reduction and resource-linked protection.</li>
-              <li><strong>Oath of the Star Watch:</strong> radiant sentinel. Its supported features emphasize radiant aura play and fear-resistance support.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Oath of Devotion:</strong> selectable and saved at level 3; no Sacred Weapon or Turn the Unholy mechanic currently runs.</li>
+              <li><span class="status status-partial">Partially implemented</span><strong>Oath of the Bright Guard:</strong> selectable and saved at level 3. Luceat has an executable `bright-guard-smite` primitive that spends 5 Lay on Hands and records a 1d8 radiant rider, but no ordinary gameplay caller currently exposes it end-to-end.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Oath of the Open Road:</strong> selectable and saved at level 3; no travel-aura or movement-support mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Oath of Iron Mercy:</strong> selectable and saved at level 3; no ally damage-reduction or resource-linked protection mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Oath of the Star Watch:</strong> selectable and saved at level 3; no radiant-aura or fear-resistance mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Ranger</h4>
             <ul>
-              <li><strong>Hunter:</strong> focused combat ranger. Hunter's Prey gives a supported combat technique against chosen prey.</li>
-              <li><strong>Deepwood Stalker:</strong> stealth explorer. Its supported features emphasize stealth in terrain and tracking boosts.</li>
-              <li><strong>Beast Bond Warden:</strong> companion ranger. Its supported features add bounded companion state and companion action support.</li>
-              <li><strong>Gloom Trail Scout:</strong> dark-terrain ambusher. Its supported features emphasize initiative bonuses and dark-terrain support.</li>
-              <li><strong>Storm Arrow Warden:</strong> ranged burst specialist. Its supported features add ranged damage riders and limited-use shots.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Hunter:</strong> selectable and saved at level 3; no Hunter's Prey gameplay mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Deepwood Stalker:</strong> selectable and saved at level 3; no stealth-terrain or tracking-boost mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Beast Bond Warden:</strong> selectable and saved at level 3; no companion-state or companion-action mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Gloom Trail Scout:</strong> selectable and saved at level 3; no initiative bonus or dark-terrain mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Storm Arrow Warden:</strong> selectable and saved at level 3; no ranged-damage rider or limited-use shot mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Rogue</h4>
             <ul>
-              <li><strong>Thief:</strong> practical movement and fast manipulation. It supports Fast Hands and Second-Story Work for quick object work, climbing, and jumping.</li>
-              <li><strong>Knife Dance Agent:</strong> agile striker. Its supported features emphasize bonus-action attack setup and precision riders.</li>
-              <li><strong>Shadow Ledger Spy:</strong> infiltration specialist. Its supported features emphasize social infiltration and tool expertise support.</li>
-              <li><strong>Vault Runner:</strong> mobility specialist. Its supported features emphasize movement bonuses and climbing support.</li>
-              <li><strong>Whisper Duelist:</strong> one-on-one disruption. Its supported features emphasize duel reactions and attack-penalty support.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Thief:</strong> selectable and saved at level 3; no Fast Hands or Second-Story Work mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Knife Dance Agent:</strong> selectable and saved at level 3; no bonus-action attack setup or precision-rider mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Shadow Ledger Spy:</strong> selectable and saved at level 3; no social-infiltration or tool-expertise mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Vault Runner:</strong> selectable and saved at level 3; no mobility-bonus or climb-support mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Whisper Duelist:</strong> selectable and saved at level 3; no duel-reaction or attack-penalty mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Sorcerer</h4>
             <ul>
-              <li><strong>Draconic Bloodline:</strong> durable innate caster. Draconic Resilience gives draconic toughness and an armor-class base of 13.</li>
-              <li><strong>Stormheart Origin:</strong> lightning and movement caster. Its supported features add lightning spell riders and movement bursts.</li>
-              <li><strong>Starwrought Origin:</strong> radiant support caster. Its supported features emphasize radiant resistance and save-support aura play.</li>
-              <li><strong>Deep Well Origin:</strong> resource-stable caster. Its supported features add a sorcery-resource buffer and limited spell recovery.</li>
-              <li><strong>Ember Vein Origin:</strong> fire specialist. Its supported features add fire damage riders and heat-resistance support.</li>
+              <li><span class="status status-implemented">Mechanically implemented</span><strong>Draconic Bloodline:</strong> selectable and saved at level 1. Draconic Resilience is enforced by armor calculation: when unarmored, base Armor Class is 13 before Dexterity and shield.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Stormheart Origin:</strong> selectable and saved at level 1; no lightning spell-rider or movement-burst mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Starwrought Origin:</strong> selectable and saved at level 1; no radiant-resistance or save-support aura mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Deep Well Origin:</strong> selectable and saved at level 1; no sorcery-resource buffer or limited spell-recovery mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Ember Vein Origin:</strong> selectable and saved at level 1; no fire damage-rider or heat-resistance mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Warlock</h4>
             <ul>
-              <li><strong>The Fiend:</strong> aggressive patron. Dark One's Blessing grants temporary vitality after defeating a hostile creature.</li>
-              <li><strong>Ashen Court Patron:</strong> fear and survival patron. Its supported features emphasize defeat-trigger buffers and fear support.</li>
-              <li><strong>Mirror Veil Patron:</strong> illusion defender. Its supported features emphasize illusion reactions and attack disruption.</li>
-              <li><strong>Deep Current Patron:</strong> cold and control patron. Its supported features add cold spell riders and forced-movement support.</li>
-              <li><strong>Thorn Crown Patron:</strong> retaliation patron. Its supported features emphasize retaliation aura and charm-resistance support.</li>
-              <li><strong>Pact of the Blade:</strong> weapon pact. Pact Weapon supports manifesting or binding a pact weapon.</li>
-              <li><strong>Pact of the Chain:</strong> helper pact. Its supported features add bounded familiar-helper and companion-command support.</li>
-              <li><strong>Pact of the Tome:</strong> spell utility pact. Its supported features add cantrip expansion and ritual utility support.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>The Fiend:</strong> selectable and saved at level 1; no Dark One's Blessing gameplay mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Ashen Court Patron:</strong> selectable and saved at level 1; no defeat-trigger buffer or fear-support mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Mirror Veil Patron:</strong> selectable and saved at level 1; no illusion-reaction or attack-disruption mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Deep Current Patron:</strong> selectable and saved at level 1; no cold spell-rider or forced-movement mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Thorn Crown Patron:</strong> selectable and saved at level 1; no retaliation-aura or charm-resistance mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Pact of the Blade:</strong> selectable and saved at level 3; no pact-weapon mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Pact of the Chain:</strong> selectable and saved at level 3; no familiar-helper or companion-command mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>Pact of the Tome:</strong> selectable and saved at level 3; no cantrip-expansion or ritual-utility mechanic currently runs.</li>
             </ul>
           </article>
 
           <article>
             <h4>Wizard</h4>
             <ul>
-              <li><strong>School of Evocation:</strong> damage-magic specialist. It supports Evocation Savant for efficient evocation study and Sculpt Spells to protect allies from some evocation effects.</li>
-              <li><strong>School of Warding:</strong> defensive spell specialist. Its supported features emphasize spell-shield reactions and ally protection.</li>
-              <li><strong>School of Translation:</strong> language and ritual specialist. Its supported features emphasize language utility and ritual study support.</li>
-              <li><strong>School of the Far Star:</strong> distant radiant caster. Its supported features emphasize range extension and radiant spell support.</li>
-              <li><strong>School of Binding Lines:</strong> control and summoning boundary specialist. Its supported features emphasize summon-boundary support and longer control duration.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>School of Evocation:</strong> selectable and saved at level 2; no Evocation Savant or Sculpt Spells gameplay mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>School of Warding:</strong> selectable and saved at level 2; no spell-shield reaction or ally-protection mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>School of Translation:</strong> selectable and saved at level 2; no language-utility or ritual-study mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>School of the Far Star:</strong> selectable and saved at level 2; no range-extension or radiant spell-support mechanic currently runs.</li>
+              <li><span class="status status-catalog">Selection/catalog only</span><strong>School of Binding Lines:</strong> selectable and saved at level 2; no summon-boundary or control-duration mechanic currently runs.</li>
             </ul>
           </article>
         </div>
