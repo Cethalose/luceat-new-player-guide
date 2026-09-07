@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luceat New Player's Guide: Character Choices</title>
+    <meta name="description" content="A Luceat guide for choosing ancestry, class, skills, paths, spells, multiclass progression, and background before creating a character.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap hero">
+        <div>
+          <p class="eyebrow">Luceat New Player's Guide</p>
+          <h1>Character Choices</h1>
+          <p class="lead">Use this guide before `!create` or `!levelup` when you want to know what a choice means in Luceat, what it changes mechanically, and how much complexity it adds to play.</p>
+          <div class="meta" aria-label="Guide facts">
+            <span class="pill">Ruleset: dnd-5e-srd-5.1</span>
+            <span class="pill">9 ancestries</span>
+            <span class="pill">13 classes</span>
+            <span class="pill">58 class path or feature choices</span>
+            <span class="pill">39 implemented spells</span>
+            <span class="pill">13 backgrounds</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav aria-label="Guide sections">
+      <div class="wrap">
+        <a href="#overview">Overview</a>
+        <a href="#ancestry">Ancestry</a>
+        <a href="#classes">Classes</a>
+        <a href="#skills">Skills</a>
+        <a href="#features">Feature Choices</a>
+        <a href="#paths">Class Paths</a>
+        <a href="#spells">Spells</a>
+        <a href="#multiclass">Multiclass</a>
+        <a href="#backgrounds">Backgrounds</a>
+        <a href="#limits">Limits</a>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <section id="overview">
+        <h2>Start With The Kind Of Player You Want To Be</h2>
+        <p class="section-intro">Luceat asks for choices in a practical order: name, ancestry, class, class skill proficiencies, required class feature choices, background, equipment, spell choices if your class needs them, then final review. Level-up choices appear later through `!levelup` or `!levelup [class]`.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Simple Front-Line Play</h3>
+            <p>Choose Fighter, Barbarian, Paladin, Monk, or Ranger if you want clear combat actions and durable adventuring. Fighter is the most direct starting point; Paladin and Ranger add more spell and support decisions later.</p>
+          </article>
+          <article class="card">
+            <h3>Magic-First Play</h3>
+            <p>Choose Wizard, Sorcerer, Cleric, Druid, Bard, or Warlock if you want spells to shape fights and exploration. These classes demand spell choices and reward planning.</p>
+          </article>
+          <article class="card">
+            <h3>Skill And Social Play</h3>
+            <p>Choose Rogue, Bard, Ranger, Warlock, or a background with strong skill coverage when you want to solve scenes through scouting, knowledge, persuasion, stealth, or investigation.</p>
+          </article>
+        </div>
+        <div class="callout">
+          Luceat is engine-authoritative: the game resolves mechanics, resources, combat targets, spell slots, proficiencies, and persistence. The narrator explains resolved results; it does not invent extra character powers.
+        </div>
+      </section>
+
+      <section id="ancestry">
+        <h2>Ancestry And Species</h2>
+        <p class="section-intro">Ancestry affects ability growth, speed, languages, and traits. Pick it for the long-term identity and passive strengths you want rather than for a single scene.</p>
+        <table>
+          <thead><tr><th>Choice</th><th>Luceat Impact</th><th>Best Fit</th></tr></thead>
+          <tbody>
+            <tr><td>Human</td><td>Broad ability growth across all six attributes, speed 30, common plus one extra language.</td><td>Players who want flexible multiclass eligibility and no narrow build pressure.</td></tr>
+            <tr><td>Dwarf</td><td>Constitution growth, speed 25, darkvision, poison resilience, and stonework knowledge.</td><td>Durable characters who expect hazards, ruins, and front-line pressure.</td></tr>
+            <tr><td>Elf</td><td>Dexterity growth, speed 30, darkvision, Perception proficiency, charm resistance, sleep immunity, and trance.</td><td>Alert scouts, archers, agile casters, and characters who value perception.</td></tr>
+            <tr><td>Halfling</td><td>Dexterity growth, speed 25, Lucky, Brave, and Nimble traits.</td><td>Careful players who like steady reliability and evasive movement.</td></tr>
+            <tr><td>Dragonborn</td><td>Strength and Charisma growth, speed 30, draconic ancestry, breath weapon, and damage resistance.</td><td>Bold martial or Charisma characters with a built-in damage identity.</td></tr>
+            <tr><td>Gnome</td><td>Intelligence growth, speed 25, darkvision, and Gnome Cunning.</td><td>Inventive, knowledge-driven, or Wizard-leaning characters.</td></tr>
+            <tr><td>Half-Elf</td><td>Charisma growth, two additional ability boosts, speed 30, darkvision, fey ancestry, and skill versatility.</td><td>Social characters and flexible hybrids that want extra skill coverage.</td></tr>
+            <tr><td>Half-Orc</td><td>Strength and Constitution growth, speed 30, darkvision, intimidation pressure, endurance, and heavier weapon impact.</td><td>Front-line characters who want to stay standing and hit hard.</td></tr>
+            <tr><td>Tiefling</td><td>Charisma and Intelligence growth, speed 30, darkvision, fire resistance, and infernal legacy.</td><td>Charisma casters, face characters, and players who want resistance plus magic flavor.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="classes">
+        <h2>Class Choice</h2>
+        <p class="section-intro">Class is the biggest choice. It sets hit die, saving throws, main attributes, starting equipment, class skill prompt, level-up features, spells, and path options.</p>
+        <table>
+          <thead><tr><th>Class</th><th>Core Identity</th><th>Complexity</th><th>Choose It If</th></tr></thead>
+          <tbody>
+            <tr><td>Artificer</td><td>Intelligence engineer with support, tools, and specialist choices.</td><td>Medium</td><td>You want practical magic, devices, and a level 3 specialist path.</td></tr>
+            <tr><td>Barbarian</td><td>Strength and Constitution front-liner with rage and high hit points.</td><td>Low</td><td>You want direct melee pressure and durability.</td></tr>
+            <tr><td>Bard</td><td>Charisma caster and skill expert with support magic.</td><td>High</td><td>You want social leverage, broad skills, spells, and later Expertise.</td></tr>
+            <tr><td>Cleric</td><td>Wisdom divine caster with healing, support, and a level 1 domain.</td><td>Medium</td><td>You want durable magic, party support, and early path identity.</td></tr>
+            <tr><td>Druid</td><td>Wisdom nature caster with exploration and control options.</td><td>Medium</td><td>You want utility, wilderness strengths, and a level 2 circle.</td></tr>
+            <tr><td>Fighter</td><td>Martial specialist with strong armor, Fighting Style, and direct progression.</td><td>Low</td><td>You want the cleanest tactical weapon character.</td></tr>
+            <tr><td>Monk</td><td>Dexterity and Wisdom skirmisher with disciplined movement.</td><td>Medium</td><td>You want mobile melee play and a level 3 tradition.</td></tr>
+            <tr><td>Paladin</td><td>Strength and Charisma protector with martial presence and support spells.</td><td>Medium</td><td>You want a front-line leader with oath-driven identity.</td></tr>
+            <tr><td>Ranger</td><td>Dexterity and Wisdom explorer with weapon skill and limited spell support.</td><td>Medium</td><td>You want scouting, tracking, and wilderness combat.</td></tr>
+            <tr><td>Rogue</td><td>Dexterity specialist with the broadest starting skill load.</td><td>Medium</td><td>You want stealth, precision, traps, and problem-solving skills.</td></tr>
+            <tr><td>Sorcerer</td><td>Charisma caster with innate origin at level 1.</td><td>High</td><td>You want focused arcane power and careful spell selection.</td></tr>
+            <tr><td>Warlock</td><td>Charisma pact caster with patron at level 1 and pact boon at level 3.</td><td>High</td><td>You want compact spellcasting, patron identity, and distinct pact choices.</td></tr>
+            <tr><td>Wizard</td><td>Intelligence spellbook caster with broad arcane options and tradition at level 2.</td><td>High</td><td>You want the deepest current arcane planning path.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="skills">
+        <h2>Class Skill Proficiencies</h2>
+        <p class="section-intro">After class selection, Luceat asks you to choose class skill proficiencies. These become part of your character summary and combine with background skills.</p>
+        <table>
+          <thead><tr><th>Class</th><th>Choose</th><th>Available Skills</th></tr></thead>
+          <tbody>
+            <tr><td>Artificer</td><td>2</td><td>Arcana, History, Investigation, Medicine, Nature, Perception, Sleight of Hand</td></tr>
+            <tr><td>Barbarian</td><td>2</td><td>Animal Handling, Athletics, Intimidation, Nature, Perception, Survival</td></tr>
+            <tr><td>Bard</td><td>3</td><td>Any supported skill</td></tr>
+            <tr><td>Cleric</td><td>2</td><td>History, Insight, Medicine, Persuasion, Religion</td></tr>
+            <tr><td>Druid</td><td>2</td><td>Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, Survival</td></tr>
+            <tr><td>Fighter</td><td>2</td><td>Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, Survival</td></tr>
+            <tr><td>Monk</td><td>2</td><td>Acrobatics, Athletics, History, Insight, Religion, Stealth</td></tr>
+            <tr><td>Paladin</td><td>2</td><td>Athletics, Insight, Intimidation, Medicine, Persuasion, Religion</td></tr>
+            <tr><td>Ranger</td><td>3</td><td>Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival</td></tr>
+            <tr><td>Rogue</td><td>4</td><td>Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, Stealth</td></tr>
+            <tr><td>Sorcerer</td><td>2</td><td>Arcana, Deception, Insight, Intimidation, Persuasion, Religion</td></tr>
+            <tr><td>Warlock</td><td>2</td><td>Arcana, Deception, History, Intimidation, Investigation, Nature, Religion</td></tr>
+            <tr><td>Wizard</td><td>2</td><td>Arcana, History, Insight, Investigation, Medicine, Religion</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Multiclass entry currently grants an extra one-skill prompt only for Bard, Ranger, and Rogue. Other multiclass entries do not repeat their full starting skill table.</p>
+      </section>
+
+      <section id="features">
+        <h2>Fighting Styles And Feature Choices</h2>
+        <p class="section-intro">Some class features require a named choice before the character can be considered fully configured. Luceat stores those choices and shows them on character summaries.</p>
+        <div class="two-column">
+          <div>
+            <h3>Fighting Style</h3>
+            <table>
+              <thead><tr><th>Style</th><th>Effect</th><th>Playstyle</th></tr></thead>
+              <tbody>
+                <tr><td>Archery</td><td>+2 attack bonus with ranged weapons.</td><td>Ranged weapon users who want accuracy.</td></tr>
+                <tr><td>Defense</td><td>+1 Armor Class.</td><td>Any armored front-liner who wants simpler survivability.</td></tr>
+                <tr><td>Dueling</td><td>+2 damage bonus.</td><td>One-handed weapon users who want steady melee damage.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Other Required Choices</h3>
+            <p>Class paths, Warlock Pact Boon, Bard and Rogue Expertise-style choices, and spell configuration can appear during creation or level-up when the active class progression reaches that feature.</p>
+            <p>Invalid choices do not silently advance the character. Luceat keeps the prior state and asks for a valid supported option.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="paths">
+        <h2>Class Paths And Subclasses</h2>
+        <p class="section-intro">Paths are the strongest identity choices after class. They become available at the level listed below. Cleric, Sorcerer, and Warlock choose their first path at creation because their path feature is level 1.</p>
+        <table>
+          <thead><tr><th>Class</th><th>When</th><th>Choice Group</th><th>Supported Options</th></tr></thead>
+          <tbody>
+            <tr><td>Artificer</td><td>Level 3</td><td>Artificer Specialist</td><td>Field Alchemist, Warding Smith, Clockwork Sapper</td></tr>
+            <tr><td>Barbarian</td><td>Level 3</td><td>Primal Path</td><td>Path of the Berserker, Iron Fury Path, Storm Breaker Path</td></tr>
+            <tr><td>Bard</td><td>Level 3</td><td>Bard College</td><td>College of Lore, College of Masks, College of Echoes</td></tr>
+            <tr><td>Cleric</td><td>Level 1</td><td>Divine Domain</td><td>Life Domain, Dawn Vigil Domain, Ember Mercy Domain, Stone Vow Domain, Threshold Lantern Domain</td></tr>
+            <tr><td>Druid</td><td>Level 2</td><td>Druid Circle</td><td>Circle of the Land, Circle of the Thorn, Circle of the River</td></tr>
+            <tr><td>Fighter</td><td>Level 3</td><td>Martial Archetype</td><td>Champion, Tactical Dice Captain, Shield Line Veteran, Arcane Weapon Adept, Siege Breaker</td></tr>
+            <tr><td>Monk</td><td>Level 3</td><td>Monastic Tradition</td><td>Way of the Open Hand, Way of Flowing Steps, Way of the Still Flame</td></tr>
+            <tr><td>Paladin</td><td>Level 3</td><td>Sacred Oath</td><td>Oath of Devotion, Oath of the Bright Guard, Oath of the Open Road, Oath of Iron Mercy, Oath of the Star Watch</td></tr>
+            <tr><td>Ranger</td><td>Level 3</td><td>Ranger Archetype</td><td>Hunter, Deepwood Stalker, Beast Bond Warden, Gloom Trail Scout, Storm Arrow Warden</td></tr>
+            <tr><td>Rogue</td><td>Level 3</td><td>Roguish Archetype</td><td>Thief, Knife Dance Agent, Shadow Ledger Spy, Vault Runner, Whisper Duelist</td></tr>
+            <tr><td>Sorcerer</td><td>Level 1</td><td>Sorcerous Origin</td><td>Draconic Bloodline, Stormheart Origin, Starwrought Origin, Deep Well Origin, Ember Vein Origin</td></tr>
+            <tr><td>Warlock</td><td>Level 1 and Level 3</td><td>Otherworldly Patron, Pact Boon</td><td>The Fiend, Ashen Court Patron, Mirror Veil Patron, Deep Current Patron, Thorn Crown Patron; Pact of the Blade, Pact of the Chain, Pact of the Tome</td></tr>
+            <tr><td>Wizard</td><td>Level 2</td><td>Arcane Tradition</td><td>School of Evocation, School of Warding, School of Translation, School of the Far Star, School of Binding Lines</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Names listed here are the supported Luceat choices. Do not assume an unlisted tabletop subclass is available in Luceat.</p>
+      </section>
+
+      <section id="spells">
+        <h2>Spell Choices</h2>
+        <p class="section-intro">Spellcasting classes may ask for cantrips and prepared or known spells during creation or level-up. When Luceat asks for both, answer with cantrips first, then a semicolon, then prepared spells.</p>
+        <div class="callout">
+          Example format: `Minor Illusion, Light, Mending; Magic Missile, Shield`
+        </div>
+        <table>
+          <thead><tr><th>Class</th><th>Current Spell List</th></tr></thead>
+          <tbody>
+            <tr><td>Artificer</td><td>Mending</td></tr>
+            <tr><td>Bard</td><td>Light, Minor Illusion, Mending, Bane, Charm Person, Cure Wounds, Detect Magic, Healing Word, Sleep, Thunderwave, Hold Person, Blindness/Deafness, Invisibility, Lesser Restoration, Shatter</td></tr>
+            <tr><td>Cleric</td><td>Guidance, Light, Mending, Resistance, Sacred Flame, Bless, Bane, Cure Wounds, Detect Magic, Command, Healing Word, Aid, Hold Person, Blindness/Deafness, Lesser Restoration, Spiritual Weapon</td></tr>
+            <tr><td>Druid</td><td>Fire Spark, Guidance, Mending, Resistance, Charm Person, Cure Wounds, Detect Magic, Entangle, Healing Word, Thunderwave, Hold Person, Lesser Restoration</td></tr>
+            <tr><td>Paladin</td><td>Bless, Cure Wounds, Detect Magic, Command, Aid, Lesser Restoration</td></tr>
+            <tr><td>Ranger</td><td>Cure Wounds, Detect Magic, Lesser Restoration</td></tr>
+            <tr><td>Sorcerer</td><td>Arcane Bolt, Fire Spark, Frost Touch, Light, Minor Illusion, Mending, Shocking Grasp, Arcane Burst, Charm Person, Detect Magic, Burning Hands, Flame Burst, Magic Missile, Shield, Sleep, Thunderwave, Hold Person, Blindness/Deafness, Invisibility, Mirror Image, Misty Step, Web, Scorching Ray, Shatter, Arcane Ward, Counterspell</td></tr>
+            <tr><td>Warlock</td><td>Arcane Bolt, Frost Touch, Minor Illusion, Charm Person, Hold Person, Invisibility, Mirror Image, Misty Step, Shatter, Counterspell</td></tr>
+            <tr><td>Wizard</td><td>Arcane Bolt, Fire Spark, Frost Touch, Light, Minor Illusion, Mending, Shocking Grasp, Arcane Burst, Charm Person, Detect Magic, Burning Hands, Flame Burst, Magic Missile, Shield, Sleep, Thunderwave, Acid Arrow, Hold Person, Blindness/Deafness, Invisibility, Mirror Image, Misty Step, Web, Scorching Ray, Shatter, Arcane Ward, Counterspell</td></tr>
+          </tbody>
+        </table>
+        <p class="small">Spell entries may be visible in the ruleset before every high-level play pattern is complete. Use Luceat's prompts and `!spells` summary as the authority for your saved character.</p>
+      </section>
+
+      <section id="multiclass">
+        <h2>Multiclass Decisions</h2>
+        <p class="section-intro">Use `!levelup [class]` when you want the next level to go into a specific class. Luceat keeps a class-level distribution on your character and prompts only for supported required configuration.</p>
+        <ul>
+          <li>Starting attributes are currently broad enough to allow representative multiclass tests, but final eligibility is still governed by Luceat's level-up flow.</li>
+          <li>Wizard multiclass entry prompts spell configuration and persists spellbook, prepared spells, and slots.</li>
+          <li>Wizard level 2 prompts Arcane Tradition before additional spell progression configuration.</li>
+          <li>Bard, Ranger, and Rogue multiclass entry prompt one supported skill proficiency.</li>
+          <li>Previously completed starting-class choices should not be asked again during same-class level-up.</li>
+        </ul>
+      </section>
+
+      <section id="backgrounds">
+        <h2>Backgrounds</h2>
+        <p class="section-intro">Background adds story framing, skills, tools, languages where configured, starting gold, and sometimes items. It is a practical way to give your character a role outside combat.</p>
+        <table>
+          <thead><tr><th>Background</th><th>Skills</th><th>Tools</th><th>Gold</th><th>Use It For</th></tr></thead>
+          <tbody>
+            <tr><td>Acolyte</td><td>Insight, Religion</td><td>None</td><td>15</td><td>Temple ties, faith, and moral or spiritual scenes.</td></tr>
+            <tr><td>Criminal</td><td>Deception, Stealth</td><td>Thieves' tools, gaming set</td><td>15</td><td>Hidden routes, illicit contacts, and covert action.</td></tr>
+            <tr><td>Charlatan</td><td>Deception, Sleight of Hand</td><td>Disguise kit, forgery kit</td><td>15</td><td>False identities, trickery, and social manipulation.</td></tr>
+            <tr><td>Entertainer</td><td>Acrobatics, Performance</td><td>Disguise kit, musical instrument</td><td>15</td><td>Crowds, travel, and attention control.</td></tr>
+            <tr><td>Folk Hero</td><td>Animal Handling, Survival</td><td>Artisan tools, land vehicles</td><td>10</td><td>Local reputation and practical rural competence.</td></tr>
+            <tr><td>Guild Artisan</td><td>Insight, Persuasion</td><td>Artisan tools</td><td>15</td><td>Trade work, negotiation, and guild obligations.</td></tr>
+            <tr><td>Hermit</td><td>Medicine, Religion</td><td>Herbalism kit</td><td>5</td><td>Seclusion, contemplation, and old discoveries.</td></tr>
+            <tr><td>Noble</td><td>History, Persuasion</td><td>Gaming set</td><td>25</td><td>Status, etiquette, and influence through name or rank.</td></tr>
+            <tr><td>Outlander</td><td>Athletics, Survival</td><td>Musical instrument</td><td>10</td><td>Remote travel, terrain, and hard conditions.</td></tr>
+            <tr><td>Sage</td><td>Arcana, History</td><td>None</td><td>10</td><td>Research, archives, and knowledge checks.</td></tr>
+            <tr><td>Sailor</td><td>Athletics, Perception</td><td>Navigator tools, water vehicles</td><td>10</td><td>Ships, ports, watches, and rough weather.</td></tr>
+            <tr><td>Soldier</td><td>Athletics, Intimidation</td><td>Gaming set, land vehicles</td><td>10</td><td>Military structure, campaigns, and battlefield presence.</td></tr>
+            <tr><td>Urchin</td><td>Sleight of Hand, Stealth</td><td>Disguise kit, thieves' tools</td><td>10</td><td>City survival, quick hands, and moving unseen.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="limits">
+        <h2>Unsupported Or Deferred Choices</h2>
+        <p class="section-intro">This guide only describes choices Luceat currently exposes or stores. It intentionally leaves out options that may exist in tabletop play but are not supported by Luceat's current ruleset or prompts.</p>
+        <ul>
+          <li>Unlisted ancestries, classes, subclasses, feats, spells, backgrounds, and equipment packages are not public player choices in this release.</li>
+          <li>High-level class features may appear in progression data before every downstream interaction has a complete player-facing workflow.</li>
+          <li>Some spell lists include entries above level 1 because they are implemented in the spell catalog, but character creation only asks for what the active spell-selection plan requires.</li>
+          <li>Use `!character`, `!abilities`, and `!spells` after creation or level-up to confirm your saved configuration.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <p>Luceat is an independent, unofficial implementation. See <a href="NOTICE.md">NOTICE.md</a> for attribution and licensing notes.</p>
+      </div>
+    </footer>
+  </body>
+</html>
