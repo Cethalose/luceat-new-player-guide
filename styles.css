@@ -248,6 +248,12 @@ h3 {
   border: 1px solid #c3ccd4;
 }
 
+.status-excluded {
+  background: #f1e2df;
+  color: #704038;
+  border: 1px solid #d2aaa4;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
