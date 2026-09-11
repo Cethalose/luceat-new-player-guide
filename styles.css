@@ -327,3 +327,13 @@ li + li {
 .progression-list { display: grid; gap: 10px; padding: 0; list-style: none; }
 .progression-list li { padding: 13px 15px; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
 .table-scroll { overflow-x: auto; }
+.subclass-selector { margin-top: 52px; padding-top: 28px; border-top: 4px solid var(--accent); }
+.subclass-selector > h2 { margin-bottom: 8px; }
+.subclass-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.subclass-tabs button { border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; background: #fff; color: #283541; font: inherit; font-weight: 700; cursor: pointer; }
+.subclass-tabs button:hover { border-color: var(--accent); }
+.subclass-tabs button[aria-selected="true"] { border-color: var(--accent); background: var(--accent); color: #fff; }
+.subclass-tabs button:focus-visible { outline: 3px solid #e5b94f; outline-offset: 2px; }
+.subclass-panel { padding: 4px 0 0; border: 0; }
+.subclass-panel[hidden] { display: none; }
+.subclass-panel > h4:first-child { margin-top: 18px; }
