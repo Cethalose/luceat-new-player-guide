@@ -315,3 +315,15 @@ li + li {
     overflow-x: auto;
   }
 }
+.progression-hero { padding: 54px 0 38px; }
+.progression-hero h1 { font-size: clamp(2.4rem, 6vw, 4.8rem); }
+.button-link { display: inline-block; border: 1px solid var(--accent); border-radius: 6px; padding: 9px 13px; background: #fff; font-weight: 700; text-decoration: none; }
+.progression-guide { max-width: 960px; }
+.progression-corpus { padding: 20px 0 48px; }
+.progression-corpus h2 { margin-top: 48px; padding-top: 20px; border-top: 3px solid var(--accent); }
+.progression-corpus h3 { margin-top: 34px; padding: 12px 14px; border-left: 4px solid var(--accent); background: var(--panel); }
+.progression-corpus h4 { margin-top: 26px; font-size: 1.08rem; }
+.progression-boundary { margin: 20px 0; padding: 16px 18px; border: 1px solid #dac26b; border-left: 5px solid #a07a00; border-radius: 6px; background: #fff8db; }
+.progression-list { display: grid; gap: 10px; padding: 0; list-style: none; }
+.progression-list li { padding: 13px 15px; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
+.table-scroll { overflow-x: auto; }
