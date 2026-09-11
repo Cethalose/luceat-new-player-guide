@@ -33,6 +33,7 @@ if (corpus && headings.length === subclassIds.length) {
   };
   moveBaseSection("how-" + className + "-spellcasting-works");
   moveBaseSection(className + "-fighting-styles");
+  if (className === "artificer") { moveBaseSection("specialist-spell-lists"); moveBaseSection("implementation-boundary"); }
 
   const selector = document.createElement("section");
   selector.className = "subclass-selector";
